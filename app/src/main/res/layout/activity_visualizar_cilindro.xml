@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C2C2C2C2"
+    app:layoutDescription="@xml/activity_anadircil_scene">
+
+    <TextView
+        android:id="@+id/fondo"
+        android:layout_width="678dp"
+        android:layout_height="955dp"
+        android:layout_marginTop="28dp"
+
+
+        android:background="@drawable/btnredondo"
+        android:backgroundTint="#9C9C9C"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="46sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anadirCil"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <TextView
+        android:id="@+id/fondoarriba"
+        android:layout_width="615dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="28dp"
+
+
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/btnredondo"
+        android:backgroundTint="#C2C2C2"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="46sp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="@+id/fondo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fondo"
+        app:layout_constraintTop_toTopOf="@+id/fondo" />
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha: "
+        android:textColor="#016FB9"
+        android:textSize="30sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="@+id/fondoarriba"
+        app:layout_constraintEnd_toEndOf="@+id/fondoarriba"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="@+id/fondoarriba"
+        app:layout_constraintTop_toTopOf="@+id/fondoarriba"
+        app:layout_constraintVertical_bias="0.184"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/cli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Cliente: "
+        android:textColor="#016FB9"
+        android:textSize="30sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="@+id/fondoarriba"
+        app:layout_constraintEnd_toEndOf="@+id/fondoarriba"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="@+id/fondoarriba"
+        app:layout_constraintTop_toBottomOf="@+id/fecha"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtidcilindro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Id Cilindro: "
+        android:textColor="#016FB9"
+        android:textSize="30sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="@+id/fondoarriba"
+        app:layout_constraintEnd_toEndOf="@+id/fondoarriba"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="@+id/fondoarriba"
+        app:layout_constraintTop_toBottomOf="@+id/cli"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/anadirCil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Consultar Cilindros"
+        android:textColor="#016FB9"
+        android:textSize="60sp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="208dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="date"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fondoarriba"
+        app:layout_constraintEnd_toEndOf="@+id/fondoarriba"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="@+id/fondoarriba"
+        app:layout_constraintTop_toTopOf="@+id/fondoarriba"
+        app:layout_constraintVertical_bias="0.148"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:text="@tools:sample/date/ddmmyy" />
+
+    <EditText
+        android:id="@+id/editTextNombreCli"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="date"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextIdCilindro"
+        app:layout_constraintEnd_toEndOf="@+id/fondoarriba"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toEndOf="@+id/cli"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+        app:layout_constraintVertical_bias="0.6"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/editTextIdCilindro"
+        android:layout_width="208dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Id Cilindro"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fondoarriba"
+        app:layout_constraintEnd_toEndOf="@+id/fondoarriba"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="@+id/fondoarriba"
+        app:layout_constraintTop_toTopOf="@+id/fondoarriba"
+        app:layout_constraintVertical_bias="0.895"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/fondoabajo"
+        android:layout_width="626dp"
+        android:layout_height="501dp"
+        android:layout_marginStart="23dp"
+
+
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/btnredondo"
+        android:backgroundTint="#C2C2C2"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="46sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo"
+        app:layout_constraintEnd_toEndOf="@+id/fondo"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/fondo"
+        app:layout_constraintTop_toBottomOf="@+id/fondoarriba"
+        app:layout_constraintVertical_bias="0.213" />
+
+    <TextView
+        android:id="@+id/txtmarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="#00FF0000"
+        android:text="Marca Cilindro: "
+        android:textColor="#016FB9"
+        android:textSize="30sp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="@+id/fondoabajo"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="@+id/fondoabajo"
+        app:layout_constraintTop_toTopOf="@+id/fondoabajo"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextMarca"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#000000"
+        android:drawableTint="#00000000"
+        android:ems="10"
+        android:hint="Marca Cilindro"
+        android:inputType="none|text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/fondoabajo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtmarca"
+        app:layout_constraintTop_toTopOf="@+id/fondoabajo" />
+
+    <EditText
+        android:id="@+id/editTextDiam"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Diametro Cilindro"
+        android:inputType="numberDecimal"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/fondoabajo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtdiametro"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMarca"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/editTextMed"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Medida Piston"
+        android:inputType="numberDecimal"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/fondoabajo"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toEndOf="@+id/txtmedidapist"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDiam" />
+
+    <TextView
+        android:id="@+id/txtmedidapist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#00FF0000"
+        android:text="Medida Piston: "
+        android:textColor="#016FB9"
+        android:textSize="30sp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="@+id/fondoabajo"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="@+id/fondoabajo"
+        app:layout_constraintTop_toBottomOf="@+id/txtdiametro"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtdiametro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="284dp"
+        android:background="#00FF0000"
+        android:text="Diametro Cilindro: "
+        android:textColor="#016FB9"
+        android:textSize="30sp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="@+id/fondoabajo"
+        app:layout_constraintTop_toBottomOf="@+id/txtmarca"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtsoldar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#00FF0000"
+        android:text="Soldar:"
+        android:textColor="#016FB9"
+        android:textSize="30sp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="@+id/fondoabajo"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/fondoabajo"
+        app:layout_constraintTop_toBottomOf="@+id/txtmedidapist"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtobs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#00FF0000"
+        android:text="Observaciones:"
+        android:textColor="#016FB9"
+        android:textSize="30sp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="@+id/fondoabajo"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="@+id/fondoabajo"
+        app:layout_constraintTop_toBottomOf="@+id/txtsoldar"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextObs"
+        android:layout_width="526dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Observaciones"
+        android:inputType="textMultiLine"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/fondoabajo"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="@+id/fondoabajo"
+        app:layout_constraintTop_toBottomOf="@+id/txtobs" />
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="117dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btnredondo"
+        android:text="Sig."
+        android:textSize="30sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo"
+        app:layout_constraintEnd_toEndOf="@+id/fondo"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="@+id/fondo"
+        app:layout_constraintTop_toBottomOf="@+id/fondoabajo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnAnterior"
+        android:layout_width="117dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btnredondo"
+        android:text="ANT."
+        android:textSize="30sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo"
+        app:layout_constraintEnd_toEndOf="@+id/fondo"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="@+id/fondo"
+        app:layout_constraintTop_toBottomOf="@+id/fondoabajo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="278dp"
+        android:layout_height="88dp"
+        android:background="@drawable/btnredondo"
+        android:text="Menu"
+        android:textSize="30sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo"
+        app:layout_constraintEnd_toStartOf="@+id/btnSiguiente"
+        app:layout_constraintStart_toEndOf="@+id/btnAnterior"
+        app:layout_constraintTop_toBottomOf="@+id/fondoabajo" />
+
+    <RadioGroup
+        android:id="@+id/rdbtnGrp"
+        android:layout_width="233dp"
+        android:layout_height="125dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtobs"
+        app:layout_constraintEnd_toEndOf="@+id/fondoabajo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtsoldar"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMed"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/rdbtnSi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Si"
+            android:textSize="40sp"
+            android:typeface="sans"
+            tools:layout_conversion_absoluteHeight="67dp"
+            tools:layout_conversion_absoluteWidth="104dp"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="681dp" />
+
+        <RadioButton
+            android:id="@+id/rdbtnNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:minHeight="48dp"
+            android:text="No"
+            android:textSize="40sp"
+            android:typeface="serif"
+            tools:layout_conversion_absoluteHeight="59dp"
+            tools:layout_conversion_absoluteWidth="173dp"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="748dp" />
+
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

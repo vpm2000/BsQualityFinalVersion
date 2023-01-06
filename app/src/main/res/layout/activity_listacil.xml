@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C2C2C2"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="46dp" />
+
+    <TextView
+        android:id="@+id/Titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listado de Cilindros"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="60sp"
+        android:typeface="serif" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="46dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lv_lista"
+                android:layout_width="match_parent"
+                android:layout_height="1112dp"
+                android:hapticFeedbackEnabled="false">
+
+            </ListView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

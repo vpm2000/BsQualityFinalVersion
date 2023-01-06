@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BsQuality</string>
+    <string name="logo_bs_quality">Logo Bs Quality</string>
+    <string name="consultarCil">Consultar Cilindro</string>
+    <string name="añadir_cilindros">Añadir Cilindro</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet>
+        <Constraint
+            android:layout_height="95dp"
+            motion:layout_constraintStart_toStartOf="@+id/fondoabajo"
+            android:layout_marginTop="36dp"
+            motion:layout_constraintHorizontal_bias="0.496"
+            motion:layout_constraintEnd_toEndOf="@+id/fondoabajo"
+            android:layout_width="504dp"
+            motion:layout_constraintTop_toBottomOf="@+id/txtobs"
+            android:id="@+id/editTextObs"
+            motion:layout_editor_absoluteY="828dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="@+id/fondoabajo"
+            android:layout_marginTop="44dp"
+            motion:layout_constraintHorizontal_bias="0.144"
+            motion:layout_constraintEnd_toEndOf="@+id/fondoabajo"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/txtsoldar"
+            android:id="@+id/txtobs" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.0"
+            android:layout_height="116dp"
+            motion:layout_constraintStart_toEndOf="@+id/txtsoldar"
+            motion:layout_constraintBottom_toTopOf="@+id/txtobs"
+            motion:layout_constraintHorizontal_bias="1.0"
+            motion:layout_constraintEnd_toEndOf="@+id/fondoabajo"
+            android:layout_width="410dp"
+            motion:layout_constraintTop_toBottomOf="@+id/editTextMed"
+            android:id="@+id/rdbtnGrp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="@+id/fondoabajo"
+            android:layout_marginTop="24dp"
+            motion:layout_constraintTop_toTopOf="@+id/fondoabajo"
+            motion:layout_constraintHorizontal_bias="0.172"
+            motion:layout_constraintEnd_toEndOf="@+id/fondoabajo"
+            android:layout_width="wrap_content"
+            android:id="@+id/txtmarca" />
+        <Constraint
+            android:layout_height="48dp"
+            motion:layout_constraintStart_toEndOf="@+id/txtmarca"
+            android:layout_marginTop="16dp"
+            motion:layout_constraintTop_toTopOf="@+id/fondoabajo"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintEnd_toEndOf="@+id/fondoabajo"
+            android:layout_width="200dp"
+            android:layout_marginStart="16dp"
+            android:id="@+id/editTextMarca" />
+        <Constraint
+            android:layout_marginEnd="284dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="284dp"
+            motion:layout_constraintEnd_toEndOf="@+id/fondoabajo"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/txtmarca"
+            android:id="@+id/txtdiametro" />
+        <Constraint
+            android:layout_height="48dp"
+            motion:layout_constraintStart_toEndOf="@+id/txtdiametro"
+            android:layout_marginTop="16dp"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintEnd_toEndOf="@+id/fondoabajo"
+            android:layout_width="200dp"
+            android:layout_marginStart="28dp"
+            motion:layout_constraintTop_toBottomOf="@+id/editTextMarca"
+            android:id="@+id/editTextDiam" />
+        <Constraint
+            android:layout_height="48dp"
+            motion:layout_constraintStart_toEndOf="@+id/txtmedidapist"
+            android:layout_marginTop="16dp"
+            motion:layout_constraintHorizontal_bias="0.08"
+            motion:layout_constraintEnd_toEndOf="@+id/fondoabajo"
+            android:layout_width="200dp"
+            motion:layout_constraintTop_toBottomOf="@+id/editTextDiam"
+            android:id="@+id/editTextMed" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="@+id/fondoabajo"
+            android:layout_marginTop="24dp"
+            motion:layout_constraintHorizontal_bias="0.167"
+            motion:layout_constraintEnd_toEndOf="@+id/fondoabajo"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/txtdiametro"
+            android:id="@+id/txtmedidapist" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="@+id/fondoabajo"
+            motion:layout_constraintHorizontal_bias="0.129"
+            motion:layout_constraintEnd_toEndOf="@+id/fondoabajo"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/txtmedidapist"
+            android:id="@+id/txtsoldar"
+            android:layout_marginTop="16dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+    </ConstraintSet>
+</MotionScene>
